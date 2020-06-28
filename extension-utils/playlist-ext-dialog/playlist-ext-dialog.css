@@ -1,0 +1,41 @@
+
+.playlist-ext-dialog-container-style{
+    transform: translateX;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #aaaaaaaa;
+}
+
+.playlist-ext-dialog-content-style{
+    width: 50%;
+    max-width: 400px; /* not optimal because it looks skewed !!! */
+    transform: translate(25vw, 25vh);
+    height: 50%;
+    border-radius: 15px;
+    border: 2px solid #a05ba688;
+    background: #4d4b4b;
+}
+
+.playlist-ext-dialog-header-style{
+    height: 50px;
+    font-size: 20px;
+    font-weight: bold;
+    padding: 10px;
+    color: white;
+    line-height: 25px;
+    background-color: #c00ed0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 1px;
+}
+
+.playlist-ext-dialog-header-title-style{
+    float:left;
+}
+
+.playlist-ext-dialog-header-close-button-style{
+    float:right;
+    width: 40px;
+    line-height: 18px;
+}

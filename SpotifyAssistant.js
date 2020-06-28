@@ -1,19 +1,23 @@
-"use strict"
-
+(function(){
 document.body.style.border = "5px solid green";
-var container;
+
 var maxAttempts = 10000;
 var attemts = 0;
 var playlistActionBarElements;
+var childAppended;
 
-(function(){
-	tryGetContainer()	
-	document.getElementsByClassName("");
+setInterval(() => {
+	childAppended = document.getElementById("SpotifyExtensionButton");
 
+	if(childAppended == null){
+		tryGetContainer();
+	}
 
+}, 200);
 
 function tryGetContainer()
 {
+	
 	if(document.readyState != 'complete'){
 		attemts++;
 		console.log("not ready, reiterating ready");
@@ -37,13 +41,16 @@ function tryGetContainerAfterReadyState()
 	{
 		setTimeout(tryGetContainerAfterReadyState, 100);
 	} else {
-		applyNewElementWhenContainerReady();
+		childAppended = document.getElementById("SpotifyExtensionButton");
+		if(childAppended == null) {
+			applyNewElementWhenContainerReady();
+		}
 	}
 }
 
 function applyNewElementWhenContainerReady(){
 
-	var elementToAdd = getElementToAdd();
+	var elementToAdd = PlaylistExtButton.prototype.GetPlaylistButtonAsHtmlNode();
 
 	try
 	{
@@ -53,15 +60,6 @@ function applyNewElementWhenContainerReady(){
 		console.error(error);
 	}
 
-}
-
-function getElementToAdd() {
-
-	var para = document.createElement("P");                       // Create a <p> node
-	var t = document.createTextNode("This is a paragraph.");      // Create a text node
-	para.appendChild(t);                                          // Append the text to <p>
-
-	return para;
 }
 
 }());

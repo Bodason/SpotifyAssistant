@@ -1,0 +1,20 @@
+.extension-button-style{
+    color: white; 
+    border-radius:8px;
+    border-color: transparent;
+    background-color: #55358a;
+    padding: 5px;
+}
+
+.extension-button-style:hover{
+    background-color:#7051a1;
+}
+
+
+.extension-button-click-style{
+    color: white; 
+    border-radius:8px;
+    border-color: transparent;
+    padding: 5px;
+    background-color:green;
+}
