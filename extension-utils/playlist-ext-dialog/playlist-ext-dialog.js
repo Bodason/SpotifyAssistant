@@ -32,7 +32,7 @@ class PlaylistExtModal {
 
         var actionsElements = dialogActions.GetDialogItemElements();
         var styles = dialogActions.GetDefaultStyles();
-        dialogActions.ApplyStylesToDialogItems(styles);
+        dialogActions.AddStylesToDialogItems(styles);
 
         dialogContent.appendChild(actionsElements);
         

@@ -3,6 +3,7 @@ class DialogItems {
     actionsContainerElement // UL element containing the list items 
     defaultStyles; // styles for UL containing the list items
 
+
     constructor(actions){
         this.actions = actions;
         this.defaultStyles = "dialog-items-style";
@@ -28,10 +29,17 @@ class DialogItems {
         return this.defaultStyles;
     }
 
-    ApplyStylesToDialogItems(styles) {
+    AddStylesToDialogItems(styles) {
         var listItems = this.actionsContainerElement;
         listItems.childNodes.forEach(element => {
             element.classList.add(styles);
+            element.onmouseenter = function(){
+                element.classList.add("dialog-items-on-mouse-enter-style");
+            }
+            element.onmouseleave= function(){
+                element.classList.remove("dialog-items-on-mouse-enter-style");
+            }
+            
         });
     }
 }
