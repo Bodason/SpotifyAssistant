@@ -9,8 +9,9 @@ var ApplyStylesToElement = function (button, initialButtonStyles) {
     return button;
 }
 
-var ApplyMultipleStylesToClassList = function(button, initialButtonStyle) {
-    initialButtonStyle.split(" ").forEach(style => {
+var ApplyMultipleStylesToClassList = function(button, initialButtonStyle) { // split strings. Does not work for arrays!
+    var styles = initialButtonStyle.split(" ");
+    styles.forEach(style => {
         button.classList.add(style);
     });
 }

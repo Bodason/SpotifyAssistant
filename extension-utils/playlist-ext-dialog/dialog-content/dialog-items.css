@@ -1,0 +1,10 @@
+.dialog-items-style{
+    cursor: pointer;
+    font-size: 15px;
+    color: white;
+    padding: 10px;
+}
+
+.dialog-items-style:hover(){
+    color:red;
+}

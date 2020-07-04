@@ -18,6 +18,8 @@
         "SpotifyAssistant.js", 
         "extension-utils/playlist-ext-button/playlist-ext-button.js",
         "extension-utils/playlist-ext-dialog/playlist-ext-dialog.js",
+        "extension-utils/playlist-ext-dialog/dialog-content/dialog-header.js",
+        "extension-utils/playlist-ext-dialog/dialog-content/dialog-items.js",
         "extension-utils/shared/common.js"
         
       ],
@@ -25,6 +27,7 @@
       [
         "extension-utils/playlist-ext-button/playlist-ext-button.css",
         "extension-utils/playlist-ext-dialog/playlist-ext-dialog.css",
+        "extension-utils/playlist-ext-dialog/dialog-content/dialog-items.css",
         "extension-utils/shared/styles.css"
       ]
     }
